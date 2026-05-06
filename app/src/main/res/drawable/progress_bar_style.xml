@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Custom drawable for the Chrome-style thin progress bar.
+    Uses a gradient for a modern look.
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background track -->
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#E0E0E0" />
+        </shape>
+    </item>
+    <!-- Progress indicator with gradient -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <gradient
+                    android:startColor="#4285F4"
+                    android:centerColor="#5B9BF8"
+                    android:endColor="#4285F4"
+                    android:angle="0" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>
